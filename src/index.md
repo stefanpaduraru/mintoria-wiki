@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: ./mintoria.io.png
 tagline: Resources for artists, collectors and partners
 actionText: Quick Start →
 actionLink: /quick-start/

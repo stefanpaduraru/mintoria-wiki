@@ -32,6 +32,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    sidebarDepth: 3,
     nav: [
       {
         text: 'Artists',
@@ -58,60 +59,65 @@ module.exports = {
       '/quick-start/': [
         {
           title: 'Quick Start',
-          collapsable: false,
           children: [
             '',
-            'using-vue',
           ]
         }
       ],
       '/artists/': [
         {
           title: 'Artists',
-          collapsable: false,
           children: [
-            '',
-            'using-vue',
+            ['', 'Artists'],
+             ['project-setup', 'Project Setup'],
+             ['project-submission', 'Project Submission'],
+             ['mintoria-galleries', 'Mintoria Galleries'],
+             ['sales-and-secondary', 'Sales and Secondary Market'],
           ]
         }
       ],
       '/collectors/': [
         {
           title: 'Collectors',
-          collapsable: false,
           children: [
-            '',
-            'using-vue',
+            ['','Collectors'],
+            ['','Metamask Login'],
+            ['','Browsing Projects'],
+            ['','Minting'],
+            ['','Your Tokens'],
+            ['','Listing on Opensea'],
           ]
         }
       ],
       '/partners/': [
         {
           title: 'Partners',
-          collapsable: false,
           children: [
-            '',
-            'using-vue',
+            ['', 'Partners'],
+            ['', 'Process Overview'],
+            ['', 'Deploying Contracts'],
+            ['', 'Testing on Testnet'],
+            ['', 'Moving to Mainnet'],
+            ['', 'Contract Management'],
           ]
         }
       ],
       '/api/': [
         {
           title: 'API',
-          collapsable: false,
           children: [
-            '',
-            'using-vue',
+            ['', 'API'],
           ]
         }
       ],
       '/resources/': [
         {
           title: 'Resources',
-          collapsable: false,
           children: [
-            '',
-            'using-vue',
+            ['', 'Resources'],
+            ['', 'Contracts'],
+            ['', 'Social Media'],
+            ['', 'OpenSea Collections'],
           ]
         }
       ],
