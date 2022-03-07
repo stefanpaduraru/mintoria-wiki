@@ -1,2 +1,1 @@
 # mintoria-wiki
-Hexo
