@@ -1,0 +1,2 @@
+# mintoria-wiki
+Hexo
