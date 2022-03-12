@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mintoria.io Wiki',
+  title: "Mintoria.io Wiki",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,9 +16,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -27,108 +30,110 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     sidebarDepth: 3,
     nav: [
       {
-        text: 'Artists',
-        link: '/artists/',
+        text: "Artists",
+        link: "/artists/",
       },
       {
-        text: 'Collectors',
-        link: '/collectors/',
+        text: "Collectors",
+        link: "/collectors/",
       },
       {
-        text: 'Partners',
-        link: '/partners/'
+        text: "Partners",
+        link: "/partners/",
       },
       {
-        text: 'API',
-        link: '/api/'
+        text: "API",
+        link: "/api/",
       },
       {
-        text: 'Resources',
-        link: '/resources/'
+        text: "Resources",
+        link: "/resources/",
       },
     ],
     sidebar: {
-      '/quick-start/': [
+      "/quick-start/": [
         {
-          title: 'Quick Start',
-          children: [
-            '',
-          ]
-        }
+          title: "Quick Start",
+          children: [""],
+        },
       ],
-      '/artists/': [
+      "/artists/": [
         {
-          title: 'Artists',
+          title: "Artists",
           children: [
-            ['', 'Artists'],
-             ['project-setup', 'Project Setup'],
-             ['project-submission', 'Project Submission'],
-             ['mintoria-galleries', 'Mintoria Galleries'],
-             ['sales-and-secondary', 'Sales and Secondary Market'],
-          ]
-        }
+            ["", "Artists"],
+            ["project-setup", "Project Setup"],
+            ["project-submission", "Project Submission"],
+            ["mintoria-galleries", "Mintoria Galleries"],
+            ["sales-and-secondary", "Sales and Secondary Market"],
+          ],
+        },
       ],
-      '/collectors/': [
+      "/collectors/": [
         {
-          title: 'Collectors',
+          title: "Collectors",
           children: [
-            ['','Collectors'],
-            ['','Metamask Login'],
-            ['','Browsing Projects'],
-            ['','Minting'],
-            ['','Your Tokens'],
-            ['','Listing on Opensea'],
-          ]
-        }
+            ["", "Collectors"],
+            ["", "Metamask Login"],
+            ["", "Browsing Projects"],
+            ["", "Minting"],
+            ["", "Your Tokens"],
+            ["", "Listing on Opensea"],
+          ],
+        },
       ],
-      '/partners/': [
+      "/partners/": [
         {
-          title: 'Partners',
+          title: "Partners",
           children: [
-            ['', 'Partners'],
-            ['', 'Process Overview'],
-            ['', 'Deploying Contracts'],
-            ['', 'Testing on Testnet'],
-            ['', 'Moving to Mainnet'],
-            ['', 'Contract Management'],
-          ]
-        }
+            ["", "Partners"],
+            ["", "Process Overview"],
+            ["", "Deploying Contracts"],
+            ["", "Testing on Testnet"],
+            ["", "Moving to Mainnet"],
+            ["", "Contract Management"],
+          ],
+        },
       ],
-      '/api/': [
+      "/api/": [
         {
-          title: 'API',
-          children: [
-            ['', 'API'],
-          ]
-        }
+          title: "API",
+          children: [["", "API"]],
+        },
       ],
-      '/resources/': [
+      "/resources/": [
         {
-          title: 'Resources',
+          title: "Resources",
           children: [
-            ['', 'Resources'],
-            ['', 'Contracts'],
-            ['', 'Social Media'],
-            ['', 'OpenSea Collections'],
-          ]
-        }
+            ["", "Resources"],
+            ["", "Contracts"],
+            ["", "Social Media"],
+            ["", "OpenSea Collections"],
+          ],
+        },
       ],
-    }
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "G-NLM90ESMFC",
+      },
+    ],
+  ],
+};
