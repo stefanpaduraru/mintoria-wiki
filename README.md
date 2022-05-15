@@ -1,1 +1,1 @@
-# mintoria-wiki
+# mintoria-docs

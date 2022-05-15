@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Mintoria.io Wiki",
+  title: "Mintoria.io Docs",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -80,27 +80,13 @@ module.exports = {
       "/collectors/": [
         {
           title: "Collectors",
-          children: [
-            ["", "Collectors"],
-            ["", "Metamask Login"],
-            ["", "Browsing Projects"],
-            ["", "Minting"],
-            ["", "Your Tokens"],
-            ["", "Listing on Opensea"],
-          ],
+          children: [["", "Collectors"]],
         },
       ],
       "/partners/": [
         {
           title: "Partners",
-          children: [
-            ["", "Partners"],
-            ["", "Process Overview"],
-            ["", "Deploying Contracts"],
-            ["", "Testing on Testnet"],
-            ["", "Moving to Mainnet"],
-            ["", "Contract Management"],
-          ],
+          children: [["", "Partners"]],
         },
       ],
       "/api/": [
@@ -112,12 +98,7 @@ module.exports = {
       "/resources/": [
         {
           title: "Resources",
-          children: [
-            ["", "Resources"],
-            ["", "Contracts"],
-            ["", "Social Media"],
-            ["", "OpenSea Collections"],
-          ],
+          children: [["", "Resources"]],
         },
       ],
     },
@@ -129,6 +110,7 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    "vuepress-plugin-smooth-scroll",
     [
       "@vuepress/google-analytics",
       {

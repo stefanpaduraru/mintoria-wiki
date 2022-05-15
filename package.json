@@ -1,20 +1,24 @@
 {
-  "name": "mintoria-wiki",
+  "name": "mintoria-docs",
   "version": "0.0.1",
-  "description": "Mintoria documentation",
+  "description": "Mintoria.io Documentation",
   "main": "index.js",
   "authors": {
     "name": "Mintoria",
     "email": "contact@mintoria.io"
   },
-  "repository": "https://github.com/stefanpaduraru/mintoria-wiki.git/Mintoria Wiki",
+  "repository": "https://github.com/stefanpaduraru/mintoria-wiki.git",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/plugin-google-analytics": "^1.9.7",
     "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vuepress-plugin-smooth-scroll": "^0.0.10"
   }
 }

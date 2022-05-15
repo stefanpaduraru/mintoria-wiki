@@ -1,4 +1,4 @@
-# Introduction
+# Project Submission
 
 The journey to publish a project on Mintoria's mainnet contract begins with a template, a placeholder for your project data before it gets published on the testnet, and finally on the mainnet.
 Once you've filled in all the details of the project, you can request a transfer to the testnet. Depending on the gallery you've chosen, the project gets assessed by Mintoria. If the project meets all the requirements, it gets deployed to the testnet. If not, you'll get a message with what you need to address to push the project forward.
@@ -10,7 +10,7 @@ The project gets assessed again, and if it's conforming with our gallery submiss
 ## Creating a Project Template
 
 Head on to the My Projects page using the link the Projects menu.<br />
-You can create your first project by pushing Create Project under one of the Mintoria galleris: Selected or Open World. [Click here to get more information about Mintoria's galleries.](/artists/mintoria-galleries)<br />
+You can create your first project by pushing Create Project under one of the Mintoria galleris: Selected or Open World. [Click here to get more information about Mintoria's galleries.](/artists/mintoria-galleries)<br /><br />
 ![Create Project Template](/images/artist/my-projects-start.png)
 
 Fill in the project name and the price per token to create your project template and submit.<br />
@@ -72,3 +72,32 @@ Features are what give your tokens diversity. All features need to be generated 
 Once you have filled in all the details and would like to move the project on the test net, submit a transfer request, which will appear in the Transfer tab. Until a request is assessed by our staff, the status will be created. After the assessment, it'll either be rejected or accepted. The staff will provide comments to explain the assessment. If the request is rejected, you can address the details mentioned in the comments and submit another one.
 
 ![Transfers Tab](/images/project/edit/transfers.png)<br /><br />
+
+## Working on the chain
+
+After a transfer to the chain is approved, the project will be deployed on the testnet (Rinkeby).
+Editing a project on the chain will be somewhat different than editing a template, with each piece of information needing a separate transaction.
+Each field now has a button next to it for updating the value on the chain.
+
+![Sync to Chain](/images/project/onchain/project-chain-sync.png)<br /><br />
+
+Clicking the sync button launches a transaction through Metamask that will update the value in the smart contract. <i>The gas fees will be supported by the artist.</i>
+
+![Confirm TX](/images/project/onchain/chain-confirm-tx.jpg)<br /><br />
+
+Wait until the transaction finishes processing and proceed to the next field. Update all the fields in the project details, token details, royalty info & script tabs.
+
+### Settings tab
+
+The information in the settings tab is not published on chain, but rather used by the platform to inform the collectors and to render the tokens.
+
+![Project Settings](/images/project/onchain/project-settings.png)<br /><br />
+
+The fields are as follows:
+
+<ul>
+<li><i>Drop Type</i> - choose between fixed price or dutch auction. The dutch auction mitigates gas wars and allows collectors that are willing to pay more to secure an early token. The artist will have to operate the price changes on the smart contract every x minutes. The gas fees are supported by the artist. </li>
+<li><i>Drop Details</i> - If the drop is a dutch auction, explain to the audience the drop mechanic: the pricing details.. </li>
+<li><i>Additional Details</i> - explain to your audience how to interact with your art etc </li>
+<li><i>Render Delay</i> - How much time the renderer should wait before creating the snapshot. Play with this value to make sure the tokens are rendered correctly. </li>
+</ul>
